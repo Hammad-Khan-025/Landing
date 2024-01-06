@@ -1,0 +1,82 @@
+.navbar-brand{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.image{
+    height: 100vh;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    width: 5vw;
+    height: 5vw;
+}
+.carousel-caption{
+    z-index: 2;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(8, 8, 8, 0.7);
+    z-index: 1;
+}
+.navbar-nav a{
+    font-size: 15px;
+    font-weight: 500;
+}
+.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+.team .card-body i{
+    font-size: 20px;
+}
+.portfolio .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+}
+.team .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+}
+.about, .services, .portfolio, .team{
+    padding-bottom: 120px;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 991px){
+    .card{
+        margin-bottom: 20px;
+    }
+    .img-area img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        top: 120px;
+    }
+    .carousel-caption h3{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+    .btn-warning{
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        padding: 4px 0px!important;
+    }
+    
+}
